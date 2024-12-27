@@ -35,7 +35,7 @@ services:
     volumes:
       - lago_storage_data:/app/storage
     ports:
-      - "3000:3000"
+      - "3000:80"
     labels:
       - traefik.enable=true
       - traefik.http.routers.lago-api.rule=Host(`api.example.com`)
